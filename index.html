@@ -6,20 +6,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Clicker4You</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 <div id="popup" class="popup">
     <h2>Sign in as:</h2>
-    <button onclick="location.href='Student_Sign_In/student_sign_in.html'" style="margin-right: 15px;">
-        <img src="Images/student_image.png" alt="Student Login" width="200" height="200">
-    </button>
-    <button onclick="location.href='Instructor_Sign_In/instructor_sign_in.html'">
+    <button onclick="location.href='Instructor_Sign_In/instructor_sign_in.html';" style="margin-right: 15px; cursor: pointer;">
         <img src="Images/teacher_image.png" alt="Instructor Login" width="200" height="200">
     </button>
-    <p style="position: fixed; top: 80%; left: 19%;">Student</p>
-    <p style="position: fixed; top: 80%; left: 66%;">Instructor</p>
+    <button onclick="location.href='Student_Sign_In/student_sign_in.html'" style="cursor: pointer;" >
+        <img src="Images/student_image.png" alt="Student Login" width="200" height="200">
+    </button>
+    <p style="position: fixed; top: 80%; left: 16.5%;">Instructor</p>
+    <p style="position: fixed; top: 80%; left: 66%;">Student</p>
 </div>
 
 <script>

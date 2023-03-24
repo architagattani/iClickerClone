@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create an Account</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1 style="position: relative; margin: 100px auto; width: 600px;">Create an Account</h1>
+
+<form style="position: relative; width: 500px; margin: -50px auto;">
+  <label for="first_name">First Name</label>
+  <br>
+  <input type="text" id="first_name" name="first_name" style="border-radius: 5px; width: 95%; height: 40px; padding-left: 10px;" autocomplete="off">
+  <br><br>
+  <label for="last_name">Last Name</label>
+  <br>
+  <input type="text" id="last_name" name="last_name" style="border-radius: 5px; width: 95%; height: 40px; padding-left: 10px;" autocomplete="off">
+  <br><br>
+  <label for="email">Email</label>
+  <br>
+  <input type="email" id="email" name="email" style="border-radius: 5px; width: 95%; height: 40px; padding-left: 10px;" autocomplete="off">
+  <br><br>
+  <label for="student_number">Student Number</label>
+  <br>
+  <input type="text" id="student_number" name="student_number" style="border-radius: 5px; width: 95%; height: 40px; padding-left: 10px;" autocomplete="off">
+  <br><br>
+  <label for="password">Password</label>
+  <br>
+  <input type="password" id="password" name="password" style="border-radius: 5px; width: 95%; height: 40px; padding-left: 10px;">
+  <a href="#" class="button" style="position: fixed; margin-left: -60px; margin-top: 16px;" onclick="showPassword()">Show</a>
+  <br><br>
+  <label for="password_confirm">Confirm Password</label>
+  <br>
+  <input type="password" id="password_confirm" name="password_confirm" style="border-radius: 5px; width: 95%; height: 40px; padding-left: 10px;">
+  <a href="#" class="button" style="position: fixed; margin-left: -60px; margin-top: 16px;" onclick="showPassword()">Show</a>
+  <br><br>
+  <input type="submit" value="Submit" style="border-radius: 20px; height: 45px; width: 50%; margin-left: 24%; margin-top: 40px; background-color: #D8F0F8; border: none; cursor: pointer;">
+  <br><br><br>
+  <a onclick="location.href='../Student_Sign_In/student_sign_in.html'" style="cursor: pointer; color:black; size: 12; margin-left: 38%;"><u>Back to Sign In</u></a>
+</form>
+
+<script>
+function showPassword() {
+  var passField = document.getElementById("password");
+  var conPassField = document.getElementById("password_confirm");
+
+  if (passField.type == "password" && conPassField.type == "password") {
+    passField.type = "text";
+    conPassField.type = "text";
+  } else {
+    passField.type = "password";
+    conPassField.type = "password";
+  }
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,46 @@
+:root {
+  --main_color1: #D77800; /* orange */
+  --main_color2: #1E6EC8; /* blue */
+  --box_color: #D8F0F8; /* light blue */
+}
+
+body {
+  background: linear-gradient(to bottom, var(--main_color1), var(--main_color2));
+  background-size: 100vw 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+input {
+  background-color: var(--box_color);
+  border: 1px solid #000000;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  margin: 5px;
+}
+
+a {
+    color:grey;
+    font-size:18px;
+    text-decoration: none
+}

@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -35,5 +36,11 @@ input {
   font-size: 15px;
   letter-spacing: 0.5px;
   margin: 5px;
+}
+
+a {
+    color:grey;
+    font-size:18px;
+    text-decoration: none
 }
 
