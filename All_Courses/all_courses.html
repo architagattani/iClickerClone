@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add a Course - iClicker</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Add a Course</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">My Profile</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="#" method="get">
+        <label for="search_course">Search for a Course:</label>
+        <input type="text" id="search_course" name="search_course" required>
+        <button type="submit">Search</button>
+      </form>
+      <h2>Add a Course</h2>
+      <form action="/add_course" method="post">
+        <label for="course_name">Course Name:</label>
+        <input type="text" id="course_name" name="course_name" required><br><br>
+        <label for="instructor">Instructor:</label>
+        <input type="text" id="instructor" name="instructor" required><br><br>
+        <label for="course_code">Course Code:</label>
+        <input type="text" id="course_code" name="course_code" required><br><br>
+        <button type="submit">Add Course</button>
+      </form>
+      <h2>Results</h2>
+      <ul>
+        <li>Biology 101 - John Smith - BIO101</li>
+        <li>Chemistry 201 - Jane Doe - CHEM201</li>
+        <li>English 101 - Bob Johnson - ENGL101</li>
+      </ul>
+    </main>
+    <footer>
+      <p>&copy; 2023 iClicker</p>
+    </footer>
+  </body>
+</html>
